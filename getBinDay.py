@@ -130,6 +130,7 @@ def main():
     if not postCode or not myAddress or not number:
         print("Authorisation issue")
         return
+    
     # grab tomorrow's date using datetime object
     tomorrow = (datetime.now() + timedelta(days=1)).strftime("%d %a %b").split()
 
